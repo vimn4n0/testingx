@@ -1,5 +1,6 @@
 # Disable ExecutionPolicy
-set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser;
+
 Function Sleep-Progress($TotalSeconds) {
     $Counter = 0;
     for ($i = 0; $i -lt $TotalSeconds; $i++) {
